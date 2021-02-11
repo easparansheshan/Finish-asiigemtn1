@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#social {
+    background-color: #b2beb5;
+}
+
+#social>a:link {
+    color: black;
+}
+
+#social>a:visited {
+    color: black;
+}
+
+#social>a:active {
+    color: red;
+}
+
+#social>a>i {
+    margin-right: 5px;
+    margin-left: 0;
+    text-decoration: none;
+    padding-bottom: 13.5px;
+}
+
+#phone {
+    background-color: #b2beb5;
+    text-align: right;
+    font-size: 17px;
+    color: black;
+}
+
+/* Search box */
+
+#searchform {
+    width: 500px;
+    height: 40px;
+    align-items: right;
+}
+
+a>i {
+    color: black;
+}
+
+a>i:hover {
+    color: red;
+}
+
+a>i:active {
+    color: yellow;
+}
+
+#para1 {
+    font-size: 10px;
+}
+
+#button1 {
+    height: 35px;
+    width: auto;
+}
+
+#searchform {
+    font-size: 15px;
+}

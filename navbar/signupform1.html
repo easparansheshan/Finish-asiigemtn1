@@ -1,0 +1,35 @@
+<body>
+    <div>
+      <ul id="listuser">
+        <h3> All users here: </h3>
+      </ul> 
+    </div>
+    
+  <form onsubmit="return false">
+  <div class="container">
+  <label for="uname"><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" id= "uname"                  name="uname" required>
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+  <button type="submit" onclick="Login()">Login</button>
+      
+  </div>
+  </form>
+  <script>
+      function Login(){
+          let names = document.getElementById("uname").value;
+          let psw = document.getElementById("psw").value;
+          var a = new Array();
+          up1 = new Object();
+         
+
+          up1 = {
+              name:names,
+              password:psw
+          };
+          
+          a.push(up1);
+          console.log(a)
+      }
+  </script>
+  </body>

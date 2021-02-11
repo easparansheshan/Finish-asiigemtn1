@@ -1,0 +1,60 @@
+#social{
+    position: absolute;
+    top:60px;
+    left:5px;
+    color: red;
+}
+.fb{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    background: url(social3.jpeg);
+   
+}
+.tw{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 165px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 110px 0;
+}
+.me{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 165px 0;
+}
+.go{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 275px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 0px -55px;
+}
+.ins{
+    width: 55px;
+    height: 54px;
+    position: absolute;
+    top: 335px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 110px -110px;
+}
+.wha{
+    width: 55px;
+    height: 54px;
+    position: absolute;
+    top: 390px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 165px -110px;
+}

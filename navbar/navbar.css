@@ -1,0 +1,235 @@
+#span {
+    background-color: yellow;
+}
+
+#span1 {
+    font-weight: bold;
+}
+
+.link1 {
+    color: black;
+    ;
+}
+
+.link2 {
+    color: black;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+#whatsapp1 {
+    margin-left: 5px;
+    color: black;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.fa-facebook-official {
+    color: rgb(29, 29, 83);
+}
+
+.fa-twitter {
+    color: rgb(32, 122, 206);
+}
+
+.fa-instagram {
+    color: rgb(128, 59, 71);
+}
+
+#social {
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    color: red;
+}
+
+.bg-white>a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.bg-white>.btn>a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+.button1:hover {
+    color: white;
+}
+
+.fb {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    background: url(social3.jpeg);
+}
+
+.tw {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 165px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 110px 0;
+}
+
+.me {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 220px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 165px 0;
+}
+
+.go {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 275px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 0px -55px;
+}
+
+.ins {
+    width: 55px;
+    height: 54px;
+    position: fixed;
+    top: 335px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 110px -110px;
+}
+
+.wha {
+    width: 55px;
+    height: 54px;
+    position: fixed;
+    top: 390px;
+    left: 0;
+    background: url(social3.jpeg);
+    background-position: 165px -110px;
+}
+
+#social5 {
+    left: 10px;
+    top: 445px;
+    position: fixed;
+    color: red;
+}
+
+/* footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+/* #footer > #link3 > a:link, a:visited {
+    color: red;
+    text-decoration: none;
+}
+#footer > #link3 > a:hover, a:active{
+    background-color: blueviolet;
+    color: white;
+} */
+
+.link5 {
+    color: red;
+}
+
+.link5:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.link6 {
+    color: rgb(104, 228, 22);
+}
+
+.link6:hover {
+    color: thistle;
+    text-decoration: none;
+}
+
+#ass {
+    color: gray;
+}
+
+/* new footer */
+
+ /* Fotter */
+ html,
+ body {
+     height: 100%;
+ }
+ body{
+     min-height: 100%;
+ } 
+
+ .footer {
+     background-color: black;
+     color: white;
+     height: 300px;
+     position: relative;
+     left:0;
+     bottom: 0px;
+     width: 100%;
+     
+ }
+
+ .footer .footer-content {
+     border: 1px solid red;
+     height: 250px;
+     display: flex;
+ }
+
+ .footer .footer-content .footer-section {
+     flex: 1;
+     /* border: ; */
+ }
+
+ .footer .footer-bottom {
+     background-color: grey;
+     color: black;
+     height: 50px;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+     text-align: center;
+     position: absolute;
+     padding-top: 20px;
+
+ }
+
+ .lin6 li {
+     color: red;
+ }
+ .social a {
+     color: white;
+ }
+ #para3 a{
+     
+     color: white;
+ }
+ #link7 {
+     color: black;
+ }
+ #link7:hover{
+     color: blue;
+     text-decoration: none;
+ }

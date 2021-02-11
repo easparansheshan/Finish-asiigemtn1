@@ -1,0 +1,18 @@
+#footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#footer > #link3 > a:link, a:visited {
+    color: red;
+    text-decoration: none;
+}
+#footer > #link3 > a:hover, a:active{
+    background-color: white;
+    color: white;
+}
