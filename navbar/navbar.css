@@ -21,7 +21,7 @@ body {
 
 #whatsapp1 {
     margin-left: 5px;
-    color: black;
+    color: red;
 }
 
 .fa-whatsapp {
@@ -127,6 +127,7 @@ body {
     color: red;
 }
 
+
 /* footer */
 
 #footer {
@@ -138,6 +139,7 @@ body {
     left: 0;
     text-align: center;
 }
+
 
 /* #footer > #link3 > a:link, a:visited {
     color: red;
@@ -170,66 +172,75 @@ body {
     color: gray;
 }
 
+
 /* new footer */
 
- /* Fotter */
- html,
- body {
-     height: 100%;
- }
- body{
-     min-height: 100%;
- } 
 
- .footer {
-     background-color: black;
-     color: white;
-     height: 300px;
-     position: relative;
-     left:0;
-     bottom: 0px;
-     width: 100%;
-     
- }
+/* Fotter */
 
- .footer .footer-content {
-     border: 1px solid red;
-     height: 250px;
-     display: flex;
- }
+html,
+body {
+    height: 100%;
+}
 
- .footer .footer-content .footer-section {
-     flex: 1;
-     /* border: ; */
- }
+body {
+    min-height: 100%;
+}
 
- .footer .footer-bottom {
-     background-color: grey;
-     color: black;
-     height: 50px;
-     width: 100%;
-     bottom: 0;
-     left: 0;
-     text-align: center;
-     position: absolute;
-     padding-top: 20px;
+.footer {
+    background-color: black;
+    color: white;
+    height: 300px;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+}
 
- }
+.footer .footer-content {
+    border: 1px solid red;
+    height: 250px;
+    display: flex;
+}
 
- .lin6 li {
-     color: red;
- }
- .social a {
-     color: white;
- }
- #para3 a{
-     
-     color: white;
- }
- #link7 {
-     color: black;
- }
- #link7:hover{
-     color: blue;
-     text-decoration: none;
- }
+.footer .footer-content .footer-section {
+    flex: 1;
+    /* border: ; */
+}
+
+.footer .footer-bottom {
+    background-color: grey;
+    color: black;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.lin6 li {
+    color: red;
+}
+
+.social a {
+    color: white;
+}
+
+#para3 a {
+    color: white;
+}
+
+#link7 {
+    color: black;
+}
+
+#link7:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.social6 {
+    background-color: black;
+}
