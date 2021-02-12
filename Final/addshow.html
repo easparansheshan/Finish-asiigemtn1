@@ -104,7 +104,8 @@
                     </div>
                     <div class="row ">
                         <div class="col-2 ">
-                            <a href="#" class=" btn btn-primary ml-3 mb-3  id="button1 ">Add</a>
+                             <Button href="#" class=" btn btn-primary ml-3 mb-3  id="button1234">Add</Button> 
+                            <!-- <a href="#" class=" btn btn-primary ml-3 mb-3  id="button1234">Add</a> -->
                         </div>
                         <div class="col-10 ">
                             <p id="para10 " class="pt-3 text-danger display-3 mb-3 "> </p>
@@ -184,46 +185,23 @@
             All Rights Reserved &copy; Sheshan | Designed & Devloped By - Sheshan
         </div>
 
-    </div>
-    <!-- end footer -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-    </script>
-    <script>
-        //function myShow() {
-        // // // $(document).ready(function () {
-        // // //     $("#button1").click(function () {
-        // // //         var num = /^[a-zA-Z]/;
-        // // //         let name = document.getElementById("Name78"); 
-        // // //         console.log(name);
-        // // //         //var sym = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/; if (!document.getElementById("Name").value.match(num)) { document.getElementById('para10').innerHTML = document.getElementById("Name").value + " not added";
-        // // //             // return false; 
-        // // //             // } else if (document.getElementById("Name").value.match(num)){
-        // // //             //      alert(document.getElementById("Name").value + " has been added"); return true; 
-        // // //              if(name.match(num)){
-        // // //                 alert(document.getElementById("Name").value + " has been added"); 
-                        
-        // // //              } else{
-        // // //                  document.getElementById("para10").innerHTML="Enter valid name Note name can't be start with numbers and symbols";
-        // // //                  return false;
-        // // //              }    
-        // // //         });
-        // // //                });
-        // // //                // }
+ 
 
-        $(document).ready(function(){
-            $("#button1").click(function(){
-                let value = document.getElementById("Name78").value();
-                var pattern = /^[a-zA-Z]/;
-                if(value.match(pattern)){
-                    alert(value + " Input succesful")
-                }else{
-                    document.getElementById("para10").innerHTML = value + " is not correct form";
-                    return false;
-                }
-            });
-        });
-
-                    </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+     </script>
+     <script>
+         $(document).ready(function(){
+             $("#button1234").click(function(){
+                 let name = document.getElementById("Name78").value;
+                 let value = /^[a-zA-Z]/;
+                 if (name.match(value)){
+                     alert("Input suceess")
+                 }else{
+                     alert("Input wrong input");
+                 }
+             })
+         })
+     </script>
 </body>
 
 </html>
