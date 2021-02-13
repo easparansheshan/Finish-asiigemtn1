@@ -14,7 +14,6 @@
             height: 350px;
             width: 250px;
         }
-      
     </style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -99,34 +98,34 @@
             <div class="container mt-3 text-center">
                 <div class="row">
                     <div class="col-12">
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('all')">All</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('a')"="0-9">0-9</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('b')"="A">A</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('c')"="B">B</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('d')"="C">C</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('e')"="D">D</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('e')"="E">E</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('f')"="F">F</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('g')"="G">G</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('h')"="H">H</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('i')"="I">I</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('j')"="J">J</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('k')"="K">K</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('l')"="L">L</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('m')"="M">M</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('n')"="N">N</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('o')"="O">O</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('p')"="P">P</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('q')"="Q">Q</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('r')"="R">R</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('s')"="S">S</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('t')"="T">T</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('u')"="U">U</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('v')"="V">V</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('w')"="W">W</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('x')"="X">X</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('y')"="Y">Y</button>
-                        <button class="btn btn-success btn-sm" onclick="filterSelection('z')"="Z">Z</button>
+                        <button class="btn btn-success btn-sm" data-filter="all1">All</button>
+                        <button class="btn btn-success btn-sm" data-filter="1">0-9</button>
+                        <button class="btn btn-success btn-sm" data-filter="a">A</button>
+                        <button class="btn btn-success btn-sm" data-filter="b">B</button>
+                        <button class="btn btn-success btn-sm" data-filter="c">C</button>
+                        <button class="btn btn-success btn-sm" data-filter="d">D</button>
+                        <button class="btn btn-success btn-sm" data-filter="e">E</button>
+                        <button class="btn btn-success btn-sm" data-filter="f">F</button>
+                        <button class="btn btn-success btn-sm" data-filter="g">G</button>
+                        <button class="btn btn-success btn-sm" data-filter="h">H</button>
+                        <button class="btn btn-success btn-sm" data-filter="i">I</button>
+                        <button class="btn btn-success btn-sm" data-filter="j">J</button>
+                        <button class="btn btn-success btn-sm" data-filter="k">K</button>
+                        <button class="btn btn-success btn-sm" data-filter="l">L</button>
+                        <button class="btn btn-success btn-sm" data-filter="m">M</button>
+                        <button class="btn btn-success btn-sm" data-filter="n">N</button>
+                        <button class="btn btn-success btn-sm" data-filter="o">O</button>
+                        <button class="btn btn-success btn-sm" data-filter="p">P</button>
+                        <button class="btn btn-success btn-sm" data-filter="q">Q</button>
+                        <button class="btn btn-success btn-sm" data-filter="r">R</button>
+                        <button class="btn btn-success btn-sm" data-filter="s">S</button>
+                        <button class="btn btn-success btn-sm" data-filter="t">T</button>
+                        <button class="btn btn-success btn-sm" data-filter="u">U</button>
+                        <button class="btn btn-success btn-sm" data-filter="v">V</button>
+                        <button class="btn btn-success btn-sm" data-filter="w">W</button>
+                        <button class="btn btn-success btn-sm" data-filter="x">X</button>
+                        <button class="btn btn-success btn-sm" data-filter="y">Y</button>
+                        <button class="btn btn-success btn-sm" data-filter="z">Z</button>
 
                     </div>
                 </div>
@@ -160,7 +159,7 @@
                         <button class="btn btn-info btn-sm mt-2" data-filter="Sport">Sport</button>
                         <button class="btn btn-info btn-sm mt-2" data-filter="Suspense">Suspense</button>
                         <button class="btn btn-info btn-sm mt-2" data-filter="Talk-show">Talk-show</button>
-                        <button class="btn btn-info btn-sm mt-2" data-filter="Sport">Thriller</button>
+                        <button class="btn btn-info btn-sm mt-2" data-filter="Thriller">Thriller</button>
                         <button class="btn btn-info btn-sm mt-2" data-filter="Sport">Travel</button>
                     </div>
                 </div>
@@ -179,7 +178,7 @@
                             <input type="search" id="search3" class="form-control rounded" placeholder="Search"
                                 aria-label="Search" aria-describedby="search-addon" />
                             <span class="input-group-text border-0" id="search-addon">
-                                <a href="#" id="search2"><i class="fa fa-search" id="search1"></i></a>
+                                <a href="#" id="search2"><i class="fa fa-search"></i></a>
                             </span>
                         </div>
                         </button>
@@ -356,7 +355,7 @@
                             </div>
                         </div>
                         <!-- second image -->
-                        <div class="col-3 itembox filterDiv cars">
+                        <div class="col-3 itembox filterDiv cars 2">
                             <div class="card  text-center">
                                 <div class="card-block">
                                     <img class="" src="../Final/New folder/row4 img2.jfif">
@@ -378,12 +377,12 @@
                             </div>
                         </div>
                         <!-- fourth image -->
-                        <div class="col-3 itembox filterDiv all">
+                        <div class="col-3 itembox filterDiv all Talk show a b 1">
                             <div class="card   text-center">
                                 <div class="card-block">
                                     <img class="" src="../Final/New folder/row4 img4.jfif">
                                     <div class="card-title">
-                                        <h5 class="text-center">sports</h2>
+                                        <h5 class="text-center">search a b </h2>
                                     </div>
                                 </div>
                             </div>
@@ -472,20 +471,20 @@
             })
         });
 
-       /* $(document).ready(function () {
-            $('.btn-success').click(function () {
-                const value = $(this).attr('data-filter');
-                const num = /^[0-9]/;
-                if (value === 'all') {
-                    $('.itembox').show();
-
-
-                } else {
-                    $('.itembox').not('.' + value).hide();
-                    $('.itembox').filter('.' + value).show();
-                }
-            });
-        });*/
+        /* $(document).ready(function () {
+             $('.btn-success').click(function () {
+                 const value = $(this).attr('data-filter');
+                 const num = /^[0-9]/;
+                 if (value === 'all') {
+                     $('.itembox').show();
+ 
+ 
+                 } else {
+                     $('.itembox').not('.' + value).hide();
+                     $('.itembox').filter('.' + value).show();
+                 }
+             });
+         });*/
         // show number value
 
         $(document).ready(function () {
@@ -552,16 +551,95 @@
         // }
 
         // search bar
-        $(document).ready(function(){
-            $("#search1").click(function(){
-                // let search = document.getElementById("#search3").value;
-                console.log(document.getElementById("#search3").value);
-                // if (search==="all"){
-                //     $(".itembox").show();
+        $(document).ready(function () {
+            $("#search3").mouseout(function () {
+                var name = document.getElementById("search3").value;
+                console.log(name);
+                $("#search2").click(function () {
+                    if (name === "all") {
+                        $(".itembox").show();
+                    } else if (name === "Action") {
+                        $(".Action").show();
+                        
 
-                // }
+                    } else if (name === "Adventure") {
+                        $(".Adventure").show();
+                    } else if (name === "Animation") {
+                        $(".Animation").show();
+                    } else if (name === "Children") {
+                        $(".Children").show();
+                    } else if (name === "Comedy") {
+                        $(".Comedy").show();
+                    } else if (name === "Crime") {
+                        $(".Crime").show();
+                    } else if (name === "Documentry") {
+                        $(".Documentry").show();
+                    } else if (name === "Drama") {
+                        $(".Drama").show();
+                    } else if (name === "Family") {
+                        $(".Family").show();
+                    } else if (name === "Fantasy") {
+                        $(".Fantasy").show();
+                    } else if (name === "Food") {
+                        $(".Food").show();
+                    } else if (name === "Home and Garden") {
+                        $(".Home").show();
+                    } else if (name === "Horror") {
+                        $(".Horror").show();
+                    } else if (name === "Min-series") {
+                        $(".Min").show();
+                    } else if (name === "Mystrey") {
+                        $(".Mystery").show();
+                    } else if (name === "News") {
+                        $(".News").show();
+                    } else if (name === "Reality") {
+                        $(".Reality").show();
+                    } else if (name === "Romance") {
+                        $(".Romance").show();
+                    } else if (name === "Sc-Fi") {
+                        $(".Sc").show();
+                    } else if (name === "Sport") {
+                        $(".Sport").show();
+                    } else if (name === "Suspense") {
+                        $(".Suspense").show();
+                    } else if (name === "Talk") {
+                        $(".Talk").show();
+                    } else if (name === "Thriller") {
+                        $(".Thriller").show();
+                    } else {
+                        $(".itembox").hide();
+                    }
+                });
             });
-        });
+        })
+
+        // find english letters
+        $(document).ready(function(){
+            $(".btn-success").click(function(){
+                console.log("suucess");
+                let value = $(this).attr('data-filter');
+                if(value=="all1"){
+                $(".itembox").show();
+                }else {
+                    $('.itembox').not('.' + value).hide();
+                    $('.itembox').filter('.' + value).show();
+                }
+            });
+            });
+            // find number
+            $(document).ready(function(){
+            $(".btn-success").click(function(){
+               var num = /^[0-9]/;
+               let value = $(this).attr('data-filter');
+               if(value==1){
+                   if(value.match(num)){
+                       $(".1, .2, .3, .4, .5, .6, .7, .8, .9, .0").show();
+                   }
+               }
+            });
+            })
+        
+
     </script>
 </body>
 
