@@ -34,19 +34,22 @@
 </head>
 
 <body>
-   <!-- Social medaa -->
+    <!-- Social medaa -->
     <div class="contaienr-fluid  social6">
         <div class="row">
             <div class="col-10" id="social3">
-                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
+                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i
+                        class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
                         aria-hidden="true"></i></a>
-                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3" aria-hidden="true"></i></a>
-                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
+                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3"
+                        aria-hidden="true"></i></a>
+                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i
+                        class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
                 <span style="margin-left: 10px; color: red;">To visit our page</span>
             </div>
             <div class="col-2" id="whatsapp">
-                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3" aria-hidden="true"></i><span
-                        id="whatsapp1">+94767160699</span></a>
+                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3"
+                        aria-hidden="true"></i><span id="whatsapp1">+94767160699</span></a>
             </div>
         </div>
     </div>
@@ -125,7 +128,8 @@
                                         <div class="input-group-prepend ">
                                             <div class="input-group-text mt-3"><i class="fa fa-key"></i></div>
                                         </div>
-                                        <input type="password" class="form-control mt-3" id="password1" placeholder="Password">
+                                        <input type="password" class="form-control mt-3" id="password1"
+                                            placeholder="Password">
                                     </div>
 
                                 </div>
@@ -195,9 +199,12 @@
             <div class="footer-section contactus">
                 <h3>Contact us</h3>
                 <form action="index.html" method="post">
-                    <input type="email" name="email" id="email" class="text-input contact-input ml-3 col-10" placeholder="Enter Your Email"><br>
-                    <textarea name="message" class="text-input contact-input ml-3 mt-2 col-10" placeholder="Enter Your Message..."></textarea><br>
-                    <button type="submit" mailto="easparansheshan456@gmail.com" target="_blank" class="btn btn-blg btn-info ml-3">
+                    <input type="email" name="email" id="email" class="text-input contact-input ml-3 col-10"
+                        placeholder="Enter Your Email"><br>
+                    <textarea name="message" class="text-input contact-input ml-3 mt-2 col-10"
+                        placeholder="Enter Your Message..."></textarea><br>
+                    <button type="submit" mailto="easparansheshan456@gmail.com" target="_blank"
+                        class="btn btn-blg btn-info ml-3">
                         <i class="fa fa-envelope mr-2"></i>Send
                     </button>
                 </form>
@@ -212,13 +219,14 @@
     <!-- End footer -->
 
     <!-- Jquery Cdn -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
         var x = document.getElementById("namesss").value;
         var y = x.length;
         /*for name verification*/
-        $(document).ready(function() {
-            $("#namesss").focusout(function() {
+        $(document).ready(function () {
+            $("#namesss").focusout(function () {
 
                 var alphaExp = /^[a-zA-Z]+$/;
                 if (document.getElementById("namesss").value === "" || document.getElementById("namesss").value === undefined || document.getElementById("namesss").value === null) {
@@ -231,98 +239,98 @@
 
             });
         });
-        $(document).ready(function() {
-                $("#namesss").dblclick(function() {
-                    $("#para1").hide();
-                })
-                $("#namesss").click(function() {
-                    $("#para1").show();
-                })
+        $(document).ready(function () {
+            $("#namesss").dblclick(function () {
+                $("#para1").hide();
             })
-            /*end of name verification*/
+            $("#namesss").click(function () {
+                $("#para1").show();
+            })
+        })
+        /*end of name verification*/
 
         /*mail verfication*/
-        $(document).ready(function() {
-                var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                $("#email1").focusout(function() {
-                    if (document.getElementById("email1").value === "" || document.getElementById("email1").value === undefined) {
-                        document.getElementById("para2").innerHTML = "! Email field can't be Empty";
+        $(document).ready(function () {
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            $("#email1").focusout(function () {
+                if (document.getElementById("email1").value === "" || document.getElementById("email1").value === undefined) {
+                    document.getElementById("para2").innerHTML = "! Email field can't be Empty";
 
-                    } else if (!document.getElementById("email1").value.match(mailformat))
-                        document.getElementById("para2").innerHTML = "! It's not a valid format it's must have Uppercase (A-Z) and lowercase (a-z) letters Digits (0-9) Characters such as ! # $ % & ‘ * + – / = ? ^ _ ` { | } ~ Character . ( period, dot or fullstop) but it should not be the first or last character and should not come one after the other";
-                })
+                } else if (!document.getElementById("email1").value.match(mailformat))
+                    document.getElementById("para2").innerHTML = "! It's not a valid format it's must have Uppercase (A-Z) and lowercase (a-z) letters Digits (0-9) Characters such as ! # $ % & ‘ * + – / = ? ^ _ ` { | } ~ Character . ( period, dot or fullstop) but it should not be the first or last character and should not come one after the other";
             })
-            /*end of mail verfication*/
+        })
+        /*end of mail verfication*/
 
         /* password validation*/
 
-        $(document).ready(function() {
-                $("#password1").focusout(function() {
-                    var pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        $(document).ready(function () {
+            $("#password1").focusout(function () {
+                var pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-                    if (document.getElementById("password1").value === "" || document.getElementById("password1").value === undefined) {
-                        document.getElementById('para3').innerHTML = "!password can't be empty";
-                    } else if (!document.getElementById("password1").value.match(pass)) {
-                        document.getElementById('para3').innerHTML = "! Password must contain at least one capital case, one simple case, one number, one symbol and should be exactly 8 characters long.";
-                    }
-                })
+                if (document.getElementById("password1").value === "" || document.getElementById("password1").value === undefined) {
+                    document.getElementById('para3').innerHTML = "!password can't be empty";
+                } else if (!document.getElementById("password1").value.match(pass)) {
+                    document.getElementById('para3').innerHTML = "! Password must contain at least one capital case, one simple case, one number, one symbol and should be exactly 8 characters long.";
+                }
             })
- //   hide warning password for para
-                $(document).ready(function(){
-                    $("#password1").mouseout(function(){
-                        let pass = document.getElementById("password1").value;
-                        var pass2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-                        if (pass.length === 8 && pass.length > 0 && pass.match(pass2)){
-                            $("#para3").hide();
-                        }
-                    })
-                    $("#email1").mouseout(function(){
-                        let mail = document.getElementById("email1").value;
-                        var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                        if(mail.match(mailformat)){
-                            $("#para2").hide();
-                        }
-                    })
-                    $("#namesss").mouseout(function(){
-                        let name3 = document.getElementById("namesss").value;
-                        var namessss = /^[a-zA-Z]+$/;
-                        if(name3.match(namessss)){
-                            $("#para1").hide();
-                        }
+        })
+        //   hide warning password for para
+        $(document).ready(function () {
+            $("#password1").mouseout(function () {
+                let pass = document.getElementById("password1").value;
+                var pass2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                if (pass.length === 8 && pass.length > 0 && pass.match(pass2)) {
+                    $("#para3").hide();
+                }
+            })
+            $("#email1").mouseout(function () {
+                let mail = document.getElementById("email1").value;
+                var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (mail.match(mailformat)) {
+                    $("#para2").hide();
+                }
+            })
+            $("#namesss").mouseout(function () {
+                let name3 = document.getElementById("namesss").value;
+                var namessss = /^[a-zA-Z]+$/;
+                if (name3.match(namessss)) {
+                    $("#para1").hide();
+                }
 
-                    })
-                    
-                })
+            })
 
-                
-         
-            /*end of password validation*/
-            //Button validation
-            //signuppp form
-            /*  let movies = [];
-   
-          const addMovie = (ev)=>{
-              ev.preventDefault();
-              let movie = {
-                  id: Date.now(),
-                  name: document.getElementById("namesss").value,
-                  email: document.getElementById("email").value,
-                  password: document.getElementById("password1").value,
-              }
-              movie.push(movie);
-              document.forms[0].reset();
-   
-              console.warn('added', {movies});
-              let pre = document.querySelector('#para4');
-              pre.textContent = '\n' + JSON.stringify(movies, '\t',2);
+        })
+
+
+
+        /*end of password validation*/
+        //Button validation
+        //signuppp form
+        /*  let movies = [];
+ 
+      const addMovie = (ev)=>{
+          ev.preventDefault();
+          let movie = {
+              id: Date.now(),
+              name: document.getElementById("namesss").value,
+              email: document.getElementById("email").value,
+              password: document.getElementById("password1").value,
           }
-          document.addEventListener('DOMContentLoaded', ()=>{
-              document.getElementById('sheshan1234').addEventListener('click',addMovie);
-          });*/
+          movie.push(movie);
+          document.forms[0].reset();
+ 
+          console.warn('added', {movies});
+          let pre = document.querySelector('#para4');
+          pre.textContent = '\n' + JSON.stringify(movies, '\t',2);
+      }
+      document.addEventListener('DOMContentLoaded', ()=>{
+          document.getElementById('sheshan1234').addEventListener('click',addMovie);
+      });*/
 
-       
-        $(document).ready(function() {
-            $("#button3").click(function(ev) {
+
+        $(document).ready(function () {
+            $("#button3").click(function (ev) {
                 ev.preventDefault();
                 // get value from input field
                 let names = document.getElementById("namesss").value;
@@ -335,7 +343,7 @@
                 if (names === "" && pass === "" && email === "") {
                     alert("All filed msut be fill")
                 } else if (pass.length == 8 && email.match(mail2) && pass.match(pass1)) {
-                   
+
                     var input = new Array();
                     user = new Object();
                     user = {
@@ -364,6 +372,8 @@
                 }
             })
         })
+        //enter function
+       
     </script>
 </body>
 

@@ -45,15 +45,18 @@
     <div class="contaienr-fluid  social6">
         <div class="row">
             <div class="col-10" id="social3">
-                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
+                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i
+                        class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
                         aria-hidden="true"></i></a>
-                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3" aria-hidden="true"></i></a>
-                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
+                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3"
+                        aria-hidden="true"></i></a>
+                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i
+                        class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
                 <span style="margin-left: 10px; color: red;">To visit our page</span>
             </div>
             <div class="col-2" id="whatsapp">
-                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3" aria-hidden="true"></i><span
-                        id="whatsapp1">+94767160699</span></a>
+                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3"
+                        aria-hidden="true"></i><span id="whatsapp1">+94767160699</span></a>
             </div>
         </div>
     </div>
@@ -503,87 +506,172 @@
 
         //search bar
         $(document).ready(function () {
+
             $("#search3").mouseleave(function () {
-                var value = document.getElementById("search3").value
+                var value = document.getElementById("search3").value;
+
                 $("#search2").click(function (e) {
-                   (e).preventDefault();
-                   console.log(value)
-                    if(value === 'all'){
+                    (e).preventDefault();
+                    console.log(value)
+                    if (value === 'all') {
                         $('.itembox').show();
-                        
-                    }else if (value == 'action'){
+
+                    } else if (value == 'action') {
                         $('.action').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value === 'adventure'){
+                    } else if (value === 'adventure') {
                         $('.adventure').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='comedy'){
+                    } else if (value == 'comedy') {
                         $('.comedy').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='animation'){
+                    } else if (value == 'animation') {
                         $('.animation').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='children'){
+                    } else if (value == 'children') {
                         $('.children').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='crime'){
+                    } else if (value == 'crime') {
                         $('.crime').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='documentry'){
+                    } else if (value == 'documentry') {
                         $('.documentry').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='drama'){
+                    } else if (value == 'drama') {
                         $('.drama').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='family'){
+                    } else if (value == 'family') {
                         $('.family').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='fantasy'){
+                    } else if (value == 'fantasy') {
                         $('.fantasy').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='food'){
+                    } else if (value == 'food') {
                         $('.food').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='home'){
+                    } else if (value == 'home') {
                         $('.home').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='horror'){
+                    } else if (value == 'horror') {
                         $('.horror').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='min'){
+                    } else if (value == 'min') {
                         $('.min').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='mystrey'){
+                    } else if (value == 'mystrey') {
                         $('.mystrey').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='news'){
+                    } else if (value == 'news') {
                         $('.news').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='reality'){
+                    } else if (value == 'reality') {
                         $('.reality').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='romance'){
+                    } else if (value == 'romance') {
                         $('.romance').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='sc'){
+                    } else if (value == 'sc') {
                         $('.sc').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='sport'){
+                    } else if (value == 'sport') {
                         $('.sport').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='travel'){
+                    } else if (value == 'travel') {
                         $('.travel').show()
                         $('.itembox').not('.' + value).hide();
-                    }else if(value=='talk'){
+                    } else if (value == 'talk') {
                         $('.talk').show()
                         $('.itembox').not('.' + value).hide();
-                    }else{
+                    } else {
                         $('.itembox').hide();
                     }
-                    
+
                 });
 
             });
+
+        });
+
+        //search bar enter function
+        $(document).on('keypress', function (e) {
+            if (e.which == 13) {
+                var value = document.getElementById("search3").value;
+                console.log(value);
+        
+                    if (value === 'all') {
+                        $('.itembox').show();
+
+                    } else if (value == 'action') {
+                        $('.action').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value === 'adventure') {
+                        $('.adventure').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'comedy') {
+                        $('.comedy').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'animation') {
+                        $('.animation').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'children') {
+                        $('.children').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'crime') {
+                        $('.crime').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'documentry') {
+                        $('.documentry').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'drama') {
+                        $('.drama').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'family') {
+                        $('.family').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'fantasy') {
+                        $('.fantasy').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'food') {
+                        $('.food').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'home') {
+                        $('.home').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'horror') {
+                        $('.horror').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'min') {
+                        $('.min').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'mystrey') {
+                        $('.mystrey').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'news') {
+                        $('.news').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'reality') {
+                        $('.reality').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'romance') {
+                        $('.romance').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'sc') {
+                        $('.sc').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'sport') {
+                        $('.sport').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'travel') {
+                        $('.travel').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else if (value == 'talk') {
+                        $('.talk').show()
+                        $('.itembox').not('.' + value).hide();
+                    } else {
+                        $('.itembox').hide();
+                    }
+                
+            }
         });
     </script>
 </body>

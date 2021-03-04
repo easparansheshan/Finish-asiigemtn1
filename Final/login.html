@@ -10,7 +10,7 @@
             line-height: 0.1em;
             margin: 10px 0 20px;
         }
-        
+
         #line5 span {
             background: #fff;
             padding: 0 10px;
@@ -41,19 +41,22 @@
 </head>
 
 <body>
-   <!-- Social medaa -->
+    <!-- Social medaa -->
     <div class="contaienr-fluid  social6">
         <div class="row">
             <div class="col-10" id="social3">
-                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
+                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i
+                        class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
                         aria-hidden="true"></i></a>
-                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3" aria-hidden="true"></i></a>
-                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
+                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3"
+                        aria-hidden="true"></i></a>
+                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i
+                        class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
                 <span style="margin-left: 10px; color: red;">To visit our page</span>
             </div>
             <div class="col-2" id="whatsapp">
-                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3" aria-hidden="true"></i><span
-                        id="whatsapp1">+94767160699</span></a>
+                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3"
+                        aria-hidden="true"></i><span id="whatsapp1">+94767160699</span></a>
             </div>
         </div>
     </div>
@@ -108,7 +111,8 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text">@</div>
                                         </div>
-                                        <input type="Email" class="form-control" id="username" placeholder="Enter your Email or Username">
+                                        <input type="Email" class="form-control" id="username"
+                                            placeholder="Enter your Email or Username">
                                     </div>
                                 </div>
                                 <p id="para2" class="text-danger ml-3 mb-0" style="font-size: 10px;"></p>
@@ -118,15 +122,18 @@
                                         <div class="input-group-prepend ">
                                             <div class="input-group-text mt-2"><i class="fa fa-key"></i></div>
                                         </div>
-                                        <input type="password" class="form-control mt-2" id="password" placeholder="Password">
+                                        <input type="password" class="form-control mt-2" id="password"
+                                            placeholder="Password">
                                     </div>
                                 </div>
                                 <p id="para1" class="text-danger ml-3 mb-0" style="font-size: 10px;"></p>
 
                             </div>
-                            <button type="submit" class="btn btn-success btn-block" onclick="myFunction" id="button1" value="Login">Login</button>
+                            <button type="submit" class="btn btn-success btn-block" onclick="myFunction" id="button1"
+                                value="Login">Login</button>
                             <p class="text-center mt-2">Forgot your password?</p>
-                            <p class="text-center mt-1"><span id="ass">Don't have your account yet? </span><a href="./Signup.html">Sign
+                            <p class="text-center mt-1"><span id="ass">Don't have your account yet? </span><a
+                                    href="./Signup.html">Sign
                                     up</a>
                             </p>
                             <fieldset>
@@ -190,14 +197,18 @@
                         <li>Register</li>
                     </a>
                 </ul>
-                <p id="para3" class="text-center text display-4.5 "><a href="/home/sheshan/Documents/First/Final/login.html">Move To Top</a></p>
+                <p id="para3" class="text-center text display-4.5 "><a
+                        href="/home/sheshan/Documents/First/Final/login.html">Move To Top</a></p>
             </div>
             <div class="footer-section contactus">
                 <h3>Contact us</h3>
                 <form action="index.html" method="post">
-                    <input type="email" name="email" id="email" class="text-input contact-input ml-3 col-10" placeholder="Enter Your Email"><br>
-                    <textarea name="message" class="text-input contact-input ml-3 mt-2 col-10" placeholder="Enter Your Message..."></textarea><br>
-                    <button type="submit" mailto="easparansheshan456@gmail.com" target="_blank" class="btn btn-blg btn-info ml-3">
+                    <input type="email" name="email" id="email" class="text-input contact-input ml-3 col-10"
+                        placeholder="Enter Your Email"><br>
+                    <textarea name="message" class="text-input contact-input ml-3 mt-2 col-10"
+                        placeholder="Enter Your Message..."></textarea><br>
+                    <button type="submit" mailto="easparansheshan456@gmail.com" target="_blank"
+                        class="btn btn-blg btn-info ml-3">
                         <i class="fa fa-envelope mr-2"></i>Send
                     </button>
                 </form>
@@ -212,8 +223,8 @@
             //  var user = document.getElementById("#username").value;
             // var pass = document.getElementById("#password").value; 
 
-            $(document).ready(function() {
-                $("#button1").click(function() {
+            $(document).ready(function () {
+                $("#button1").click(function () {
                     // alert(document.getElementById("username").value + " "+document.getElementById("password").value);
                     if (document.getElementById("username").value === email[0] && document.getElementById("password").value === password[0]) {
                         alert(email[0] + " Login succesfully");
@@ -230,6 +241,24 @@
                     }
                 })
             })
+            //enter function
+            $(document).on('keypress', function (e) {
+                if (e.which == 13) {
+                    if (document.getElementById("username").value === email[0] && document.getElementById("password").value === password[0]) {
+                        alert(email[0] + " Login succesfully");
+                    } else if (document.getElementById("username").value === email[1] && document.getElementById("password").value === password[1]) {
+                        alert(email[1] + " Login succesfully");
+                    } else if (document.getElementById("username").value === email[2] && document.getElementById("password").value === password[2]) {
+                        alert(email[2] + " Login succesfully");
+                    } else if (document.getElementById("username").value === email[3] && document.getElementById("password").value === password[3]) {
+                        alert(email[3] + " Login succesfully");
+                    } else if (document.getElementById("username").value === email[4] && document.getElementById("password").value === password[4]) {
+                        alert(email[4] + " Login succesfully");
+                    } else {
+                        alert("Enter valid mail or password");
+                    }
+                }
+            });
         </script>
     </div>
     <!-- end footer -->
