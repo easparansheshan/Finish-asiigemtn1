@@ -45,14 +45,14 @@
     <div class="contaienr-fluid  social6">
         <div class="row">
             <div class="col-10" id="social3">
-                <a href="#"><i class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
+                <a href="https://www.facebook.com/Sheshan.H/" target="blank"><i class="fa fa-facebook-official fa-lg ml-3" style="margin-left: 15px; color: blue;"
                         aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-lg ml-3" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
+                <a href="https://github.com/easparansheshan" target="blank"><i class="fa fa-github fa-lg ml-3" aria-hidden="true"></i></a>
+                <a href=" https://www.instagram.com/sheshaneasparan/" target="blanl"><i class="fa fa-instagram fa-lg ml-3" aria-hidden="true"></i></a>
                 <span style="margin-left: 10px; color: red;">To visit our page</span>
             </div>
             <div class="col-2" id="whatsapp">
-                <a href="#"><i class="fa fa-whatsapp fa-lg ml-3" aria-hidden="true"></i><span
+                <a href="https://wa.me/94767160699" target="blank"><i class="fa fa-whatsapp fa-lg ml-3" aria-hidden="true"></i><span
                         id="whatsapp1">+94767160699</span></a>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <div class="row">
                     <div class="col-12">
                         <button class="btn btn-success btn-sm" data-filter="all">All</button>
-                        <button class="btn btn-success btn-sm" data-filter="0-9">0-9</button>
+                        <button class="btn btn-success btn-sm number" data-filter="0-9">0-9</button>
                         <button class="btn btn-success btn-sm" data-filter="A">A</button>
                         <button class="btn btn-success btn-sm" data-filter="B">B</button>
                         <button class="btn btn-success btn-sm" data-filter="C">C</button>
@@ -331,12 +331,12 @@
                             </div>
                         </div>
                         <!-- Fourth Image -->
-                        <div class="col-3 itembox 1">
+                        <div class="col-3 itembox 1 comedy">
                             <div class="card text-center">
                                 <div class="card-block">
                                     <img class="" src="../Final/New folder/row3 img4.jfif">
                                     <div class="card-title">
-                                        <h5 class="text-center">Action Movie</h2>
+                                        <h5 class="text-center">Comedy</h2>
                                     </div>
                                 </div>
                             </div>
@@ -346,12 +346,12 @@
                     <!-- End of third row -->
                     <div class="row mt-3">
                         <!-- firts image -->
-                        <div class="col-3 itembox">
+                        <div class="col-3 itembox action">
                             <div class="card  text-center">
                                 <div class="card-block">
                                     <img class="" src="../Final/New folder/row4 img1.jfif">
                                     <div class="card-title">
-                                        <h5 class="text-center">action movie</h2>
+                                        <h5 class="text-center">action movie a</h2>
                                     </div>
                                 </div>
                             </div>
@@ -379,12 +379,12 @@
                             </div>
                         </div>
                         <!-- fourth image -->
-                        <div class="col-3 itembox sport 1 2">
-                            <div class="card   text-center">
+                        <div class="col-3 itembox sport adventure 1 2 num action">
+                            <div class="card  text-center">
                                 <div class="card-block">
                                     <img class="" src="../Final/New folder/row4 img4.jfif">
                                     <div class="card-title">
-                                        <h5 class="text-center">sports</h2>
+                                        <h5 class="text-center">sports num adventure</h2>
                                     </div>
                                 </div>
                             </div>
@@ -476,7 +476,7 @@
         $(document).ready(function () {
             $('.btn-success').click(function () {
                 const value = $(this).attr('data-filter');
-                const num = /^[0-9]/;
+
                 if (value === 'all') {
                     $('.itembox').show();
 
@@ -494,7 +494,7 @@
                 const num = /^[0-9]/;
                 const value = $(this).attr('data-filter');
                 if (value.match(num)) {
-                    $('.itembox').show();
+                    $('.num').show();
                 } else {
                     $('.itembox').hide();
                 }
@@ -505,18 +505,29 @@
         $(document).ready(function () {
             $("#search3").mouseleave(function () {
                 var value = document.getElementById("search3").value
-                $("#search2").click(function () {
-                    if (value == 'all') {
-                        $(".itembox").show();
+                $("#search2").click(function (e) {
+                   (e).preventDefault();
+                   console.log(value)
+                    if(value === 'all'){
+                        $('.itembox').show();
+                        
                     }else if (value == 'action'){
-                        $(".action").show();
+                        $('.action').show()
+                        $('.itembox').not('.' + value).hide();
+                    }else if(value === 'adventure'){
+                        $('.adventure').show()
+                        $('.itembox').not('.' + value).hide();
+                    }else if(value=='comedy'){
+                        $('.comedy').show()
+                        $('.itembox').not('.' + value).hide();
                     }else{
-                        $(".itembox").hide();
+                        $('.itembox').hide();
                     }
-                })
-            })
+                    
+                });
 
-        })
+            });
+        });
     </script>
 </body>
 
